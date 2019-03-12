@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quick-Scholar|Homepage</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css"/>		
+</head>
+<body>
+
+<div id="splashscreen">
+        <div class="icon-wrapper">
+            <img src="res/icon.png" style="width: 120px;">
+        </div>
+        <hr style="margin: 5px 30%">
+        <p class="title-header">Quick Scholar</p>
+        <p class="title-sub-header">Computerized Based System for tests and examination</p>
+        <!-- <img src="jamb_logo.jpg" width="50" height="50"> -->
+        <hr style="margin: 25px 30%">
+        <div class="login-form">
+        	<form action="" method="">
+        		<div class="form-group">
+        			<label>Email Address:</label>
+        			<input type="email" name="email" class="form-control" placeholder="Matric Number/ Student ID" />
+        		</div>
+        		<div class="form-group">
+        			<label>Password:</label>
+        			<input type="password" name="password" class="form-control" placeholder="Password" />
+        		</div>
+        	</form>	
+        	<a href="./data/questions.html" class="startBtn">
+	            <p> Question <span class="fa fa-play"></span></p>
+	        </a>
+	        <a href="./data/answers.html" class="startBtn">
+	            <p> Answer <span class="fa fa-play"></span></p>
+	        </a>
+        </div>
+        
+        <div class="title-foot">
+            <p><center>Developed by Thexagon | Ladejobi Blessing</center></p>
+        </div>
+    </div>
+
+<div class="container-fluid" id="cover">
+	
+</div>
+
+</div>
+<script type="text/javascript">
+	//GETTING STARTED -- THE QUICK SCHOLAR
+	document.getElementById("startBtn").onclick = function(){
+		document.location.assign("indexPage.html");
+	}
+
+	//TYPING ANIMATION
+	/*function type(){
+		var i = 0;
+		var txt = 'Quick Scholar ';
+		var speed = 200;
+		setTimeout(function () {
+			
+		}, 1000);
+		document.querySelector(".typing").innerHTML=""
+
+		function typeWriter() {
+		  if (i < txt.length) {
+		    document.querySelector(".typing").innerHTML += txt.charAt(i);
+		    i++;
+		    	setTimeout(typeWriter, speed);
+  			}
+		}typeWriter()
+	};*/
+
+</script>
+
+</body>
+</html>
